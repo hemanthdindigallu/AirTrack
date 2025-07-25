@@ -9,11 +9,13 @@
 <body>
     <main>
         <h2>Search Flights by Flight Number</h2>
-        <form action="upcoming.html">
+        <form action="results.html">
           <label for="flight-number">Flight Number:</label>
           <input type="text" id="flight-number" name="flight-number" required>
     
-          <button type="submit">Search</button>
+          <div class="button-container">
+            <button onclick="window.location.href='index.html'" class="action-button">Back to Home</button>
+          </div>
         </form>
       </main>
     </body>

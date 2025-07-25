@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (detailsButton) {
       detailsButton.addEventListener('click', () => {
         // Simulate flight details result
-        window.location.href = 'results.html';
+        window.location.href = 'upcoming.html';
       });
     }
   });
