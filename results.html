@@ -1,16 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Results</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Flight Details</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 40px 20px;
+      background: #f9f9f9;
+    }
+
+    h1 {
+      margin-bottom: 20px;
+      text-decoration: underline;
+    }
+
+    .plane-icon {
+      font-size: 80px;
+      margin-bottom: 30px;
+    }
+
+    .info {
+      font-size: 24px;
+      margin: 10px 0;
+      font-weight: 500;
+    }
+
+    .label {
+      font-size: 18px;
+      color: #444;
+    }
+
+    button {
+      margin-top: 30px;
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
+  <h1>Flight Details</h1>
   
-  <main>
-    <h2>Flight Search Results</h2>
-    <p>[Placeholder for results based on query]</p>
-  </main>
+  <div class="plane-icon">✈️</div>
+
+  <div class="info">Leave in 1 Hr</div>
+
+  <div class="info label">Gate: A12</div>
+  <div class="info label">Weather: Sunny, 32°C</div>
+
+  <button id="detailsButton">See Result</button>
+
+  <script src="main.js"></script>
 </body>
 </html>
