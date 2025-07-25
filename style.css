@@ -2,17 +2,17 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #b3adad;
-    color: #333333;
+    background: #1a1a1a;
+    color: #ffffff;
 }
   
 nav {
-    background: #b3adad;
-    color: #333333;
+    background: #2d2d2d;
+    color: white;
     display: flex;
     padding: 15px;
     justify-content: space-between;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
 }
 
 .nav-left, .nav-right {
@@ -35,7 +35,7 @@ nav a i {
 
 nav a:hover {
     background: #3d3d3d;
-    color: #b3adad;
+    color: #ffffff;
 }
   
 main {
@@ -45,7 +45,7 @@ main {
 }
 
 h1, h2, h3 {
-    color: #007bff;
+    color: #00b4ff;
 }
   
 form {
@@ -53,18 +53,17 @@ form {
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
-    background: #b3adad;
+    background: #2d2d2d;
     padding: 20px;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
   
 input {
     padding: 12px;
     font-size: 1rem;
-    background: #ffffff;
-    border: 1px solid #dddddd;
-    color: #333333;
+    background: #3d3d3d;
+    border: 1px solid #4d4d4d;
+    color: white;
     border-radius: 4px;
 }
 
