@@ -2,12 +2,12 @@ body {
     font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f5f5f5;
+    background: #b3adad;
     color: #333333;
 }
   
 nav {
-    background: #ffffff;
+    background: #b3adad;
     color: #333333;
     display: flex;
     padding: 15px;
@@ -35,7 +35,7 @@ nav a i {
 
 nav a:hover {
     background: #3d3d3d;
-    color: #ffffff;
+    color: #b3adad;
 }
   
 main {
@@ -53,7 +53,7 @@ form {
     flex-direction: column;
     gap: 15px;
     max-width: 400px;
-    background: #ffffff;
+    background: #b3adad;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
