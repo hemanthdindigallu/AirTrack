@@ -5,17 +5,29 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FlightTracker</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
-  <main>
-    <h1>AirTrack</h1>
-
-    <div class="button-container">
-        <button onclick="window.location.href='info.html'" class="action-button">Search for Upcoming Flights</button>
-      <button onclick="window.location.href='search.html'" class="action-button">Track Flights by Route</button>
-      <button onclick="window.location.href='info_results.html'" class="action-button">Track by Flight Number</button>
-      <button onclick="window.location.href='live-map.html'" class="action-button">View Live Map</button>      
-    </div>
-  </main>
+    <nav>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="search.html">Search</a>
+            <a href="live-map.html">Live Map</a>
+            <a href="info.html">Info</a>
+        </div>
+        <div class="nav-right">
+            <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+            <a href="profile.html"><i class="fas fa-user"></i> Profile</a>
+        </div>
+    </nav>
+    <main>
+        <h1>AirTrack</h1>
+        <div class="button-container">
+            <button onclick="window.location.href='info.html'" class="action-button">Search for Upcoming Flights</button>
+            <button onclick="window.location.href='search.html'" class="action-button">Track Flights by Route</button>
+            <button onclick="window.location.href='info_results.html'" class="action-button">Track by Flight Number</button>
+            <button onclick="window.location.href='live-map.html'" class="action-button">View Live Map</button>      
+        </div>
+    </main>
 </body>
 </html>

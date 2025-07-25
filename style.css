@@ -1,52 +1,78 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background: #f9f9f9;
-  }
+    background: #1a1a1a;
+    color: #ffffff;
+}
   
-  nav {
-    background: #333;
+nav {
+    background: #2d2d2d;
     color: white;
     display: flex;
-    padding: 10px;
-    justify-content: space-around;
-  }
-  
-  nav a {
-    color: white;
+    padding: 15px;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.nav-left, .nav-right {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+nav a {
+    color: #00b4ff;
     text-decoration: none;
     padding: 8px 16px;
-  }
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+nav a:hover {
+    background: #3d3d3d;
+    color: #ffffff;
+}
   
-  main {
-    padding: 20px;
-  }
+main {
+    padding: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1, h2, h3 {
+    color: #00b4ff;
+}
   
-  form {
+form {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 15px;
     max-width: 400px;
-  }
+    background: #2d2d2d;
+    padding: 20px;
+    border-radius: 8px;
+}
   
-  input, button {
-    padding: 8px;
+input {
+    padding: 12px;
     font-size: 1rem;
-  }
-  
-  button {
-    background-color: #007BFF;
+    background: #3d3d3d;
+    border: 1px solid #4d4d4d;
     color: white;
-    border: none;
-    cursor: pointer;
-  }
+    border-radius: 4px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #00b4ff;
+}
   
-  button:hover {
-    background-color: #0056b3;
-  }
-  
-  .button-container {
+.button-container {
     display: flex;
     justify-content: center;
     gap: 20px;
@@ -58,12 +84,19 @@ body {
     font-size: 16px;
     border: none;
     border-radius: 5px;
-    background-color: #007bff;
+    background-color: #00b4ff;
     color: white;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 
 .action-button:hover {
-    background-color: #0056b3;
+    background-color: #0090cc;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+
+.action-button:active {
+    transform: translateY(0);
 }
