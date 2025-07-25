@@ -3,40 +3,54 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Flight Details</title>
+  <title>Flight Tracker</title>
   <link rel="stylesheet" href="style.css" />
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 40px 20px;
-      background: #f9f9f9;
+      padding: 20px;
+      margin: 0;
+      background-color: #f4f4f4;
     }
 
-    h1 {
-      margin-bottom: 20px;
-      text-decoration: underline;
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
 
-    .plane-icon {
-      font-size: 80px;
-      margin-bottom: 30px;
-    }
-
-    .info {
+    .map-box {
+      background-color: #dcdcdc;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
       font-size: 24px;
-      margin: 10px 0;
-      font-weight: 500;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
     }
 
     .label {
-      font-size: 18px;
-      color: #444;
+      font-weight: bold;
+      margin-bottom: 5px;
     }
 
-    button {
-      margin-top: 30px;
-      padding: 10px 20px;
+    .route {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
       font-size: 16px;
       background-color: #007bff;
       color: white;
@@ -45,23 +59,21 @@
       cursor: pointer;
     }
 
-    button:hover {
+    .button:hover {
       background-color: #0056b3;
     }
   </style>
 </head>
 <body>
-  <h1>Flight Details</h1>
-  
-  <div class="plane-icon">✈️</div>
+  <div class="container">
+    <div class="map-box">MAP</div>
 
-  <div class="info">Leave in 1 Hr</div>
+    <div class="section">
+      <div class="label">FLIGHT NO.</div>
+      <div class="route">DEL → BOM</div>
+    </div>
 
-  <div class="info label">Gate: A12</div>
-  <div class="info label">Weather: Sunny, 32°C</div>
-
-  <button id="detailsButton">See Result</button>
-
-  <script src="main.js"></script>
+    <button class="button" onclick="window.location.href='flight-details.html'">Flight Details</button>
+  </div>
 </body>
 </html>

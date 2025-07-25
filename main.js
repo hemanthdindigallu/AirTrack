@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (trackButton) {
       trackButton.addEventListener('click', () => {
         // Simulate "loading" next screen
-        window.location.href = 'flight-details.html';
+        window.location.href = 'results.html';
       });
     }
   
