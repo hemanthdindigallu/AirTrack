@@ -4,33 +4,91 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Flight Tracker</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    .container {
+      max-width: 400px;
+      margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+
+    .map-box {
+      background-color: #dcdcdc;
+      height: 200px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+
+    .label {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+
+    .route {
+      font-size: 20px;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    .button {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      font-size: 16px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      background-color: #0056b3;
+    }
+  </style>
 </head>
 <body>
-  <div class="container">
-    <div class="map-box">
-      <img src="images/live_map.jpg" alt="Live Map" style="width: 100%; height: 100%; border-radius: 10px;" />
-    </div>
-
-    <div class="section">
-      <div class="label">FLIGHT NO.</div>
-      <div class="route">DEL → BOM</div>
-    </div>
-
-    <div class="progress-bar">
-      <div class="progress-fill"></div>
-    </div>
-
-    <div class="section details">
-      <div class="detail-item"><strong>Aircraft:</strong> Airbus A320</div>
-      <div class="detail-item"><strong>Weather at Departure:</strong> 28°C, Clear</div>
-    <div class="detail-item"><strong>Weather at Arrival:</strong> 30°C, Cloudy</div>
-    <div class="detail-item"><strong>Flight Status:</strong> On Time</div>
-    </div>
+    <div class="container">
+        <div class="map-box">
+          <img src="images/live_map.jpg" alt="Live Map" style="width: 100%; height: 100%; border-radius: 10px;" />
+        </div>
+    
+        <div class="section">
+          <div class="label">FLIGHT NO.</div>
+          <div class="route">DEL → BOM</div>
+        </div>
+    
+        <div class="progress-bar">
+          <div class="progress-fill"></div>
+        </div>
+    
+        <div class="section details">
+          <div class="detail-item"><strong>Aircraft:</strong> Airbus A320</div>
+          <div class="detail-item"><strong>Weather at Departure:</strong> 28°C, Clear</div>
+        <div class="detail-item"><strong>Weather at Arrival:</strong> 30°C, Cloudy</div>
+        <div class="detail-item"><strong>Flight Status:</strong> On Time</div>
+        </div>
 
     <div class="button-container">
-    <button onclick="window.location.href='index.html'" class="action-button">Back to Home</button>
-  </div>
+        <button onclick="window.location.href='index.html'" class="action-button">Back to Home</button>
+      </div>
   </div>
 </body>
 </html>
