@@ -1,30 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Search Flight</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Flight</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <nav>
-        <a href="index.html">Home</a>
-        <a href="search.html">Search</a>
-        <a href="live-map.html">Live Map</a>
-        <a href="info.html">Info</a>
+        <div class="nav-left">
+            <a href="index.html">Home</a>
+            <a href="search.html">Search By Route</a>
+            <a href="info.html">Search by Flight No.</a>
+            <a href="live-map.html">Live Map</a>
+        </div>
+        <div class="nav-right">
+            <button><i class="fas fa-cog"></i> Settings</button>
+            <button><i class="fas fa-user"></i> Profile</button>
+        </div>
+    </nav>
   
-  <main>
-    <h2>Search Flights</h2>
-    <form action="results.html">
+    <main>
+        <h2>Search Flights</h2>
+        <form action="results.html" method="GET">
+            <div class="form-group">
+                <label for="source">
+                    <i class="fas fa-plane-departure"></i> Departure Airport:
+                </label>
+                <input type="text" id="source" name="source" required placeholder="e.g., JFK">
+            </div>
 
-      <label for="source">Departure Airport:</label>
-      <input type="text" id="source" name="source">
+            <div class="form-group">
+                <label for="destination">
+                    <i class="fas fa-plane-arrival"></i> Arrival Airport:
+                </label>
+                <input type="text" id="destination" name="destination" required placeholder="e.g., LAX">
+            </div>
 
-      <label for="destination">Arrival Airport:</label>
-      <input type="text" id="destination" name="destination">
-
-      <button type="submit">Search</button>
-    </form>
-  </main>
+            <div class="button-container">
+                <button type="submit" class="action-button">
+                    <i class="fas fa-search"></i> Search Flights
+                </button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
